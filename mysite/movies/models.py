@@ -7,3 +7,6 @@ class MovieData (models.Model):
     director = models.CharField(max_length = 200)
     duration = models.FloatField()
     rating = models.FloatField()
+
+    def __str__(self): #overriding string method shows name of the movie in the admin panel
+        return self.name
