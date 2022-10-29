@@ -22,5 +22,6 @@ router = routers.DefaultRouter() #variable = routers we imported.method
 router.register('movies', MovieViewSet) #registers the view
 
 urlpatterns = [
+    path('', include(router.urls)),
     path('admin/', admin.site.urls),
 ]
