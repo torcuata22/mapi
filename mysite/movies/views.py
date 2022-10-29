@@ -25,4 +25,4 @@ class CrimeViewSet(viewsets.ModelViewSet):
     serializer_class = MovieSerializer
 
 
-#add science fiction, and crime
+#add more genres?

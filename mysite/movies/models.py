@@ -8,6 +8,7 @@ class MovieData (models.Model):
     genre = models.CharField(max_length=200, default = 'action')
     duration = models.FloatField()
     rating = models.FloatField()
+    image = models.ImageField(upload_to='Images/', default = 'Images/None/Noimg.jpg')
 
     def __str__(self): #overriding string method shows name of the movie in the admin panel
         return self.name
