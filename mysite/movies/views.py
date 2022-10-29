@@ -12,5 +12,17 @@ class ActionViewSet(viewsets.ModelViewSet):
     queryset = MovieData.objects.filter(genre = 'action')
     serializer_class = MovieSerializer
 
+class FantasyViewSet(viewsets.ModelViewSet):
+    queryset = MovieData.objects.filter(genre = 'fantasy')
+    serializer_class = MovieSerializer
 
-#add fantasy, science fiction and crime
+class SciFiViewSet(viewsets.ModelViewSet):
+    queryset = MovieData.objects.filter(genre = 'science fiction')
+    serializer_class = MovieSerializer
+
+class CrimeViewSet(viewsets.ModelViewSet):
+    queryset = MovieData.objects.filter(genre = 'crime')
+    serializer_class = MovieSerializer
+
+
+#add science fiction, and crime
