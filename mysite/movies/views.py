@@ -7,3 +7,10 @@ from .models import MovieData
 class MovieViewSet(viewsets.ModelViewSet):
     queryset = MovieData.objects.all()
     serializer_class = MovieSerializer
+
+class ActionViewSet(viewsets.ModelViewSet):
+    queryset = MovieData.objects.filter(genre = 'action')
+    serializer_class = MovieSerializer
+
+
+#add fantasy, science fiction and crime
